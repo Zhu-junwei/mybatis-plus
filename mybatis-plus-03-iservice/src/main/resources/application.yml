@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mp?serverTimezone=Asia/Shanghai&useSSL=false&characterEncoding=utf-8
+
+mybatis-plus:
+  # 别名包扫描路径
+  type-aliases-package: com.zjw.domain
+  global-config:
+    db-config:
+      # 设置id字段为自增长
+      id-type: auto
+  configuration:
+    # mybatis二级缓存，默认为true，开启
+    cache-enabled: false
+    # 是否开启自动驼峰命名规则，默认为true，开启
+    map-underscore-to-camel-case: true
+    # 设置控制台日志打印，默认不显示SQL语句
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # Mapper 所对应的 XML 文件位置，默认为“classpath*:/mapper/**/*.xml”
+  mapper-locations:
+    - classpath*:/mapper/**/*.xml
