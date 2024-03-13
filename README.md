@@ -4,7 +4,7 @@
 
 版本：
 
-MyBatisPlus 3.5.3.1
+MyBatisPlus 3.5.5
 
 参考教程：
 
