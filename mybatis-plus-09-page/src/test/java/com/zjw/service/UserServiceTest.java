@@ -129,7 +129,7 @@ class UserServiceTest {
     void testPage() {
         int pageNo = 1, pageSize = 2;
         Page<User> page = Page.of(pageNo, pageSize);
-        page.addOrder(new OrderItem("id",true));
+        page.addOrder(new OrderItem().setColumn("id"));
         Page<User> userPage = userService.page(page);
         //当前页
         System.out.println("page.getCurrent() = " + userPage.getCurrent());

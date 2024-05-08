@@ -24,23 +24,10 @@ public class PageQuery {
     @Schema(description = "是否升序")
     private Boolean isAsc;
 
-    /*public static <PO, VO> PageDTO<VO> of(Page<PO> p, Class<VO> clazz){
-        PageDTO<VO> dto = new PageDTO<>();
-        dto.setTotal(p.getTotal());
-        dto.setPages(p.getPages());
-        List<PO> records = p.getRecords();
-        if (CollUtil.isEmpty(records)){
-            dto.setList(Collections.emptyList());
-            return dto;
-        }
-        dto.setList(BeanUtil.copyToList(records,clazz));
-        return dto;
-    }*/
-
     public <T> Page<T> toMpPage(OrderItem ... items){
         Page<T> page = Page.of(pageNo, pageSize);
         if (StrUtil.isNotBlank(sortBy)) {
-            page.addOrder(new OrderItem(sortBy, isAsc));
+            page.addOrder(new OrderItem().setColumn(sortBy).setAsc(isAsc));
         } else if (Objects.nonNull(items)){
             page.addOrder(items);
         }
