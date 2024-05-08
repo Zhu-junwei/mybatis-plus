@@ -7,7 +7,7 @@ import lombok.Getter;
 
 /**
  * @author 朱俊伟
- * @date 2023/11/17 14:58
+ * @since 2023/11/17 14:58
  */
 public class UserEnum {
 

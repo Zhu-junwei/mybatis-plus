@@ -17,7 +17,7 @@ import java.util.List;
  * LambdaQueryWrapper
  * LambdaUpdateWrapper
  * @author 朱俊伟
- * @date 2023/11/15 16:34
+ * @since 2023/11/15 16:34
  */
 @SpringBootTest
 class UserMapperWrapperTest {

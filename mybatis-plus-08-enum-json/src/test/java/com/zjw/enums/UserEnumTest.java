@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author 朱俊伟
- * @date 2023/11/17 15:13
+ * @since 2023/11/17 15:13
  */
 class UserEnumTest {
 

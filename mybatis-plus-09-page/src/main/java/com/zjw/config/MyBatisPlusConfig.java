@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * MyBatisPlus配置类
  * @author 朱俊伟
- * @date 2023/11/17 16:19
+ * @since 2023/11/17 16:19
  */
 @Configuration
 public class MyBatisPlusConfig {

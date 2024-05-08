@@ -9,7 +9,7 @@ import org.apache.ibatis.annotations.Update;
 
 /**
  * @author 朱俊伟
- * @date 2023/11/15 16:33
+ * @since 2023/11/15 16:33
  */
 public interface UserMapper extends BaseMapper<User> {
 
